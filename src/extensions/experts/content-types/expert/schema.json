@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experts",
+  "info": {
+    "tableName": "up_experts",
+    "singularName": "expert",
+    "pluralName": "experts",
+    "displayName": "Les Experts",
+    "description": "A regular les experts type",
+    "kind": "collectionType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "min": 1,
+      "max": 50
+    },
+    "testbaby": {
+      "type": "string"
+    }
+  }
+}
