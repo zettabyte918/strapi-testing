@@ -7,4 +7,7 @@ module.exports = {
       .service("myService")
       .getWelcomeMessage();
   },
+  yolo(ctx) {
+    ctx.body = strapi.plugin("experts").service("myService").getYolo();
+  },
 };

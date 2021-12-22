@@ -10,6 +10,14 @@ module.exports = {
           policies: [],
         },
       },
+      {
+        method: "GET",
+        path: "/yolo",
+        handler: "myController.yolo",
+        config: {
+          policies: [],
+        },
+      },
     ],
   },
 };
