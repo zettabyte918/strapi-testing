@@ -20,7 +20,7 @@ export default {
     },
     locales: ["fr"],
     tutorials: false,
-    notifications: { release: false },
+    notifications: { releases: false },
     theme: {
       colors: {
         alternative100: "#f6ecfc",
