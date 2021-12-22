@@ -1,4 +1,4 @@
-const expert = require("./expert/schema");
+const expert = require("./expert");
 
 module.exports = {
   expert,
