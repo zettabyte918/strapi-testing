@@ -2,9 +2,7 @@
 
 module.exports = ({ strapi }) => ({
   getWelcomeMessage() {
-    return strapi.db.query("plugin::experts.expert").findOne({
-      select: ["name"],
-    });
+    return strapi.db.query("plugin::experts.expert").findMany({});
   },
   getYolo() {
     const roles = strapi.query("plugin::experts.expert").find();
