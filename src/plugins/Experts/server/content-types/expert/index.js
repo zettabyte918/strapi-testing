@@ -1,6 +1,6 @@
 "use strict";
 
-const schema = require("./schema");
+const schema = require("./");
 
 module.exports = {
   schema,
