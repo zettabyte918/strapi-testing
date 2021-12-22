@@ -1,8 +1,8 @@
 "use strict";
 
 module.exports = {
-  index(ctx) {
-    ctx.body = strapi
+  async index(ctx) {
+    ctx.body = await strapi
       .plugin("experts")
       .service("myService")
       .getWelcomeMessage();
