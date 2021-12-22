@@ -22,7 +22,7 @@ module.exports = createCoreController("api::class.class", ({ strapi }) => ({
   async yo(ctx) {
     const { user } = ctx.state;
     const res = await strapi
-      .service("api::class.class")
+      .service("api::class.classe")
       .exampleService("welcome@mysite.com");
 
     const sanitizedEntity = await this.sanitizeOutput(res, ctx); // this for user (model) sanitize
