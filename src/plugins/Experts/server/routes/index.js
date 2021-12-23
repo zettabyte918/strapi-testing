@@ -12,6 +12,14 @@ module.exports = {
       },
       {
         method: "GET",
+        path: "/set/:value",
+        handler: "myController.index",
+        config: {
+          policies: [],
+        },
+      },
+      {
+        method: "GET",
         path: "/yolo",
         handler: "myController.yolo",
         config: {
