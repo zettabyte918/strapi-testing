@@ -10,7 +10,7 @@ module.exports = {
     kind: "collectionType",
   },
   options: {
-    draftAndPublish: true,
+    draftAndPublish: false,
   },
   pluginOptions: {
     "content-manager": {
