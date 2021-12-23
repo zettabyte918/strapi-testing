@@ -1,10 +1,18 @@
 "use strict";
-const { getService, getController } = require("../utils");
+const { getService, query, getController } = require("../utils");
 
 module.exports = ({ strapi }) => ({
   getWelcomeMessage() {
-    return strapi.db.query("plugin::experts.expert").findMany({
+    return query("experts.expert").findMany({
       select: ["name"],
+      where: {
+        name: {
+          $ne: "mm",
+        },
+      },
+
+      offset: 0, //start from first entry
+      limit: 10,
     }); //https://docs.strapi.io/developer-docs/latest/developer-resources/database-apis-reference/query-engine/single-operations.html#findone
   },
   async getYolo(ctx) {
