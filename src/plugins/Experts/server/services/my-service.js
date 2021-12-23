@@ -21,3 +21,16 @@ module.exports = ({ strapi }) => ({
     return await getController("myController").yolo(ctx);
   },
 });
+
+// return query("experts.expert").createMany({ create manyy
+//   data: [
+//     {
+//       name: "ABCD",
+//       testbaby: "hehe",
+//     },
+//     {
+//       name: "EFGH",
+//       testbaby: "s",
+//     },
+//   ],
+// });
