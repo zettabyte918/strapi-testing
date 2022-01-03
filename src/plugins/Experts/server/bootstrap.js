@@ -1,5 +1,14 @@
-'use strict';
+"use strict";
 
-module.exports = ({ strapi }) => {
-  // bootstrap phase
+module.exports = async ({ strapi }) => {
+  const actions = [
+    {
+      section: "plugins",
+      displayName: "Read",
+      uid: "read",
+      pluginName: "experts",
+    },
+  ];
+
+  await strapi.admin.services.permission.actionProvider.registerMany(actions);
 };
